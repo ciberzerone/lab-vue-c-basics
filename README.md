@@ -83,6 +83,30 @@ lab-vue-c-basics/
 
 ![estructura proyecto LAB | Vue.js Basics](https://github.com/ciberzerone/lab-vue-c-basics/blob/master/img/instalacion02.jpg)
 
+
+create a `navbar` component
+```vue
+<template>
+  <nav>
+    <h1>Navbar</h1>
+  </nav>
+</template>
+
+<script lang="ts" setup>
+// No necesitas lógica adicional por ahora
+</script>
+
+<style scoped>
+nav {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+
+```
+
 ### Iteration 2 | Display the result of a JavaScript operation in a component's HTML
 
 You've already practiced showing a `string` inside a Vue component's template using mustache syntax (`{{}}`). You've also seen that strings are not the only things you can insert on your HTML using this technique.
