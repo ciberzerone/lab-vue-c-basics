@@ -59,6 +59,25 @@ You have to create a `navbar` component and a `footer` component, that you'll in
 
 Right now, you don't need to worry about styling these components; just make sure they're working and you're free to advance to the next task.
 
+```plaintext
+
+lab-vue-c-basics/
+│
+├── node_modules/         # Dependencias del proyecto
+├── public/               # Archivos estáticos
+├── src/                  # Carpeta principal del proyecto
+│   ├── assets/           # Recursos como imágenes y estilos
+│   ├── components/       # Aquí van los componentes
+│   ├── App.vue           # Componente principal de la aplicación
+│   └── main.js           # Punto de entrada principal de la aplicación
+├── index.html            # Archivo HTML principal
+├── package.json          # Configuración del proyecto
+├── vite.config.js        # Configuración de Vite
+└── .gitignore            # Archivos que deben ser ignorados por git
+
+
+```
+
 
 ### Iteration 2 | Display the result of a JavaScript operation in a component's HTML
 
