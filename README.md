@@ -84,7 +84,8 @@ lab-vue-c-basics/
 ![estructura proyecto LAB | Vue.js Basics](https://github.com/ciberzerone/lab-vue-c-basics/blob/master/img/instalacion02.jpg)
 
 
-create a `navbar` component
+#### create a `navbar` component
+src/components/Navbar.vue 
 ```vue
 <template>
   <nav>
@@ -107,6 +108,66 @@ nav {
 
 ```
 
+
+#### create a `footer` component
+
+src/components/footer.vue 
+
+```vue 
+<template>
+  <footer>
+    <p>© 2024 Mi Aplicación</p>
+  </footer>
+</template>
+
+<script lang="ts" setup>
+// No necesitas lógica adicional por ahora
+</script>
+
+<style scoped>
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+</style>
+
+```
+
+./App.vue
+
+```vue
+
+<script lang="ts" setup>
+import Navbar from './components/Navbar.vue';
+import Footer from './components/Footer.vue';
+
+const getResult = () => 5 * 3;
+</script>
+
+
+
+<template>
+  <Navbar />
+  <div>
+    Resultado de 2 + 2 es: {{ 2 + 2 }}
+    <br />
+    Resultado de la función es: {{ getResult() }}
+  </div>
+  <router-view />
+  <Footer />
+</template>
+
+
+
+```
+
+![resultado interacion 01](https://github.com/ciberzerone/lab-vue-c-basics/blob/master/img/iteracion01.jpg)
+
 ### Iteration 2 | Display the result of a JavaScript operation in a component's HTML
 
 You've already practiced showing a `string` inside a Vue component's template using mustache syntax (`{{}}`). You've also seen that strings are not the only things you can insert on your HTML using this technique.
@@ -115,6 +176,10 @@ This challenge has two parts:
 
 - First, you just need to insert a mathematical operation inside your HTML and see what happens. Something as simple as `2 + 2` is enough here.
 - Then, the real challenge begins: you have to "print" a `string` on your template, with a twist: this string has to be returned by a function and read the data stored in other reactive variables. Hint: [this article](https://vuejs.org/guide/essentials/computed.html#basic-example) can shed some light on how you can do this.
+
+#### JavaScript operation
+
+
 
 ### Iteration 3 | Show an element only if a particular property is set to `true`
 
