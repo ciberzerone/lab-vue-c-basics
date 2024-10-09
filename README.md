@@ -59,6 +59,8 @@ You have to create a `navbar` component and a `footer` component, that you'll in
 
 Right now, you don't need to worry about styling these components; just make sure they're working and you're free to advance to the next task.
 
+![proceso de instalacion proyecto LAB | Vue.js Basics](https://github.com/ciberzerone/lab-vue-c-basics/blob/master/img/instalacion01.jpg)
+
 ```plaintext
 
 lab-vue-c-basics/
@@ -77,7 +79,9 @@ lab-vue-c-basics/
 
 
 ```
+![estructura proyecto LAB | Vue.js Basics](https://github.com/ciberzerone/lab-vue-c-basics/blob/master/img/estructuraProjecto.jpg)
 
+![estructura proyecto LAB | Vue.js Basics](https://github.com/ciberzerone/lab-vue-c-basics/blob/master/img/instalacion02.jpg)
 
 ### Iteration 2 | Display the result of a JavaScript operation in a component's HTML
 
